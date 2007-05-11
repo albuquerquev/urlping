@@ -13,6 +13,10 @@ public class PingResponse {
     private ResponseStatus responseStatus;
     private int responseCode;
 
+    /**
+     * 
+     * @return
+     */
     public int getResponseCode() {
         return responseCode;
     }
