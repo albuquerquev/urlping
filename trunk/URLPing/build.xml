@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="URLPing" default="Package Generation">
+	<target name="Package Generation">
+		<jar destfile="urlping.jar">
+			<fileset dir="." includes="**" excludes="*.jar" />
+		</jar>
+	</target>
+</project>
