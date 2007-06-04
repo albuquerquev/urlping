@@ -4,7 +4,7 @@ The following describes the requirements and usage of URLPing.
  * Java SE - URLPing is designed to run on Java SE 5.0 and later.
 
 =Library Dependencies=
- * Commons HttpClient [http://jakarta.apache.org/commons/httpclient]
+ * [http://jakarta.apache.org/commons/httpclient Commons HttpClient]
  * Commons Logging [http://jakarta.apache.org/commons/logging]
  * Commons Codec [http://jakarta.apache.org/commons/codec]
  
