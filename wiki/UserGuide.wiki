@@ -5,8 +5,8 @@ The following describes the requirements and usage of URLPing.
 
 =Library Dependencies=
  * [http://jakarta.apache.org/commons/httpclient Commons HttpClient]
- * Commons Logging [http://jakarta.apache.org/commons/logging]
- * Commons Codec [http://jakarta.apache.org/commons/codec]
+ * [http://jakarta.apache.org/commons/logging Commons Logging]
+ * [http://jakarta.apache.org/commons/codec Commons Codec]
  
 =Usage=
 {{{URLPing}}} is the main class. This class provides two methods {{{ping(String url)}}} and {{{ping(String url, int timeout)}}}. The first method accepts a URL to ping and defaults to a timeout of 30 seconds. The second method accepts a timeout interval in seconds in addition to the URL to ping.
@@ -17,7 +17,6 @@ PingResponse pingResponse = urlPing.ping("http://stormontpapers.ahds.ac.uk");
         
 assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
 }}}
-
 
 
 
