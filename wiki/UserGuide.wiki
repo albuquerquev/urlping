@@ -47,4 +47,3 @@ assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
 
 
 
-
