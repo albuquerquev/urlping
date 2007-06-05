@@ -12,17 +12,17 @@ import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.params.HttpClientParams;
 
 /**
- * 
+ * Pings a URL to query its status. 
  * 
  * @author Vijay N Albuquerque
  *
  */
 public class URLPing {
     /**
-     * Defaults to a 30 second timeout.
+     * Pings a URL to query its status. The method defaults to a 30 second timeout.
      * 
-     * @param url
-     * @return
+     * @param url - the URL <code>String</code> to ping. 
+     * @return <code>PingResponse</code> representing either <code>OKAY</code>, <code>ERROR</code> or <code>TIMEOUT</code>. 
      * @throws IOException
      */
     public PingResponse ping(String url)
@@ -31,10 +31,11 @@ public class URLPing {
     }
     
     /**
+     * Pings a URL to query its status. The method accepts a timeout interval specified in seconds.
      * 
-     * @param url
-     * @param timeout
-     * @return
+     * @param url - the URL <code>String</code> to ping.
+     * @param timeout - the timeout interval specified in seconds.
+     * @return <code>PingResponse</code> representing either <code>OKAY</code>, <code>ERROR</code> or <code>TIMEOUT</code>.
      * @throws IOException
      */
     public PingResponse ping(String url, int timeout)

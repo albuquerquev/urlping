@@ -4,7 +4,7 @@
 package com.techvj.urlping;
 
 /**
- * 
+ * The response received from pinging a URL.
  * 
  * @author Vijay N Albuquerque
  *
@@ -13,15 +13,11 @@ public class PingResponse {
     private ResponseStatus responseStatus;
     private int responseCode;
 
-    /**
-     * 
-     * @return
-     */
     public int getResponseCode() {
         return responseCode;
     }
 
-    public void setResponseCode(int responseCode) {
+    void setResponseCode(int responseCode) {
         this.responseCode = responseCode;
     }
 
@@ -29,7 +25,7 @@ public class PingResponse {
         return responseStatus;
     }
 
-    public void setResponseStatus(ResponseStatus responseStatus) {
+    void setResponseStatus(ResponseStatus responseStatus) {
         this.responseStatus = responseStatus;
     }
 }
