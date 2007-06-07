@@ -15,29 +15,20 @@ import com.techvj.urlping.URLPing;
 
 public class URLPingTest {
     @Test
-    public void testDesigningShakespeare()
+    public void testValidGoogle()
     throws IOException {
         URLPing urlPing = new URLPing();
-        PingResponse pingResponse = urlPing.ping("http://ahds.ac.uk/ahdscollections/docroot/shakespeare/playslist.do");
+        PingResponse pingResponse = urlPing.ping("http://www.google.com");
         
         assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
     }
     
     @Test
-    public void testICTGuides()
+    public void testInvalidGoogle()
     throws IOException {
         URLPing urlPing = new URLPing();
-        PingResponse pingResponse = urlPing.ping("http://www.ahds.ac.uk/ictguides");
+        PingResponse pingResponse = urlPing.ping("http://www.google.com/junk327217827187337882");
         
-        assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
-    }
-    
-    @Test
-    public void testStormontPapers()
-    throws IOException {
-        URLPing urlPing = new URLPing();
-        PingResponse pingResponse = urlPing.ping("http://stormontpapers.ahds.ac.uk");
-        
-        assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
+        assertEquals(pingResponse.getResponseStatus(), ResponseStatus.ERROR);
     }
 }
