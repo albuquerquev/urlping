@@ -20,6 +20,8 @@ assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
 
 The response to the {{{ping}}} method is a {{{PingReponse}}} object. This contains a {{{ResponseStatus}}} enum with values of either {{{OKAY}}}, {{{ERROR}}} or {{{TIMEOUT}}} depending on the outcome of the ping. It also contains a {{{responseCode}}} property which contains the response code of the HTTP request.
 
+=Javadocs=
+The Javadocs for URLPing can be accessed [http://urlping.googlecode.com/svn/trunk/URLPing/Javadoc/index.html here].
 
 
 
