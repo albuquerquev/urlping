@@ -21,7 +21,7 @@ public class URLPing {
     /**
      * Pings a URL to query its status. The method defaults to a 30 second timeout.
      * 
-     * @param url - the URL <code>String</code> to ping. 
+     * @param url The URL <code>String</code> to ping. 
      * @return <code>PingResponse</code> representing either <code>OKAY</code>, <code>ERROR</code> or <code>TIMEOUT</code>. 
      * @throws IOException
      */
@@ -33,8 +33,8 @@ public class URLPing {
     /**
      * Pings a URL to query its status. The method accepts a timeout interval specified in seconds.
      * 
-     * @param url - the URL <code>String</code> to ping.
-     * @param timeout - the timeout interval specified in seconds.
+     * @param url The URL <code>String</code> to ping.
+     * @param timeout The timeout interval specified in seconds.
      * @return <code>PingResponse</code> representing either <code>OKAY</code>, <code>ERROR</code> or <code>TIMEOUT</code>.
      * @throws IOException
      */
