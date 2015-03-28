@@ -23,7 +23,7 @@ Usage
 URLPing is the main class. This class provides two methods ping(String url) and ping(String url, int timeout). The first method accepts a URL to ping and defaults to a timeout of 30 seconds. The second method accepts a timeout interval in seconds in addition to the URL to ping.
 
     URLPing urlPing = new URLPing();
-    PingResponse pingResponse = urlPing.ping("http://stormontpapers.ahds.ac.uk");
+    PingResponse pingResponse = urlPing.ping("http://www.google.com");
             
     assertEquals(pingResponse.getResponseStatus(), ResponseStatus.OKAY);
 
